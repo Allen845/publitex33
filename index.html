@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publitex</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactos.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Slider.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favison__2_-re.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/63de5d1655.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+    	touch: true,
+    	pauseOnAction: false,
+    	pauseOnHover: false,
+    });
+  });
+  </script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" width="150px">
+        </a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="login2.html">login</a></li>
+                <li><a href="#mas" target="blank">Mas</a></li>
+            </ul>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+        </div>
+        <div class="searchBox">
+            <input type="text" placeholder="Busca aqui............">
+        </div>
+    </header>
+    <script src="js/script.js"></script>
+    <!--Fin NAV-->
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="img/bannner1.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/banner2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/banner3.jpg" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+         <script src="js/slider.js"></script>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+   <!--Categorias--> 
+   <div class="categorias">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="img/1polo.png">
+            </div>
+            <div class="col-3">
+                <img src="img/1polo.png">
+            </div>
+            <div class="col-3">
+                <img src="img/1polo.png">
+            </div>
+        </div>
+    </div>
+   </div>
+<!--Productos-->
+<div class="small-container" id="productos">
+    <h2 class="titulo">Nuestros Productos</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-1.jpg" alt="">
+            <h4>Polo Chimpuk Varon</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>S/.40.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-1.jpg" alt="">
+            <h4>Polo Chimpuk Varon</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>S/.40.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-1.jpg" alt="">
+            <h4>Polo Chimpuk Varon</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>S/.40.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-1.jpg" alt="">
+            <h4>Polo Chimpuk Varon</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>S/.40.00</p>
+        </div>
+        <div class="productos">
+            <a href="productos.html">Ver mas &#8594</a>
+        </div>
+    </div>
+    <h2 class="titulo" id="mas"> Mas Productos</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-1.jpg" alt="">
+            <h4>Polo Chimpuk Varon</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>S/.40.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-1.jpg" alt="">
+            <h4>Polo Chimpuk Varon</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>S/.40.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-1.jpg" alt="">
+            <h4>Polo Chimpuk Varon</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>S/.40.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-1.jpg" alt="">
+            <h4>Polo Chimpuk Varon</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>S/.40.00</p>
+        </div>
+    </div>
+</div>
+<!--Otra seccion-->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/casco1 (2).png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Tambien somos importadores</p>
+                <h1>Truper</h1>
+                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident placeat quia cumque? Minima debitis, sint alias explicabo culpa eaque nulla soluta vel! Optio</small>
+                <br>
+                <a href="">Comprar Ahora &#8594</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Hoja de Contactos-->
+<div class="art-contenedor" id="contacto">
+	<h2 align="center">CONTACTANOS</h2>
+	<hr>
+	<div class="imagen">	
+	<img src="img/fondo-contac.jpg" class="img-cont">
+	<br>
+	</div>
+	<div class="form">
+	<form action="" method="POST">	
+		<h2>CONTACTANOS</h2>
+		<h3>ESCRIBENOS UN COMENTARIO</h3>	
+		<p>Nombre Completo *</p>
+		<input type="text" placeholder="Ingrese su Nombre Completo" name="nombres">
+		<p>Correo Electronico *</p>
+		<input type="email" placeholder="Ingrese su Correo" name="email">
+		<p>Telefono *</p>
+		<input type="number" placeholder="Ingrese su Telefono" name="telefono">
+		<p>Comentario</p>
+		<textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+		<br>
+		<input type="submit" value="Enviar" name="envio">	
+	</form>
+	</div>
+	</div>	
+<!--Brands-->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="img/Mastercard.png" id="mastercard">
+            </div>
+            <div class="col-5">
+                <img src="img/visa.png" id="mastercard">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-paypal.png">
+            </div>
+            <div class="col-5">
+                <img src="img/AMEX.png" id="mastercard">
+            </div>
+            <div class="col-5">
+                <img src="img/DINERSCLUB-re.png" id="mastercard">
+            </div>
+        </div>
+    </div>
+</div>
+<!--Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">            
+            <h3>Descarga Nuestra App</h3>
+            <p>Descarga la App en Android o en Ios</p>
+            <div class="app-logo">
+                <img src="images/play-store.png">
+                <img src="images/app-store.png">
+            </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="img/logo.png" width="190px">
+                <p>Comprale al Peruano</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Enlaces utiles</h3>
+                <ul>
+                    <li>Cupones</li>
+                    <li>Post</li>
+                    <li>Politica de privacidad</li>
+                    <li>Afiliarte</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Siguenos</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Tiktok</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright &copy; a Publitex.s.a.c</p>
+    </div>
+</div>
+</script>
+</body>
+</html>
